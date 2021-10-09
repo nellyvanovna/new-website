@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>grille</title>
+	<link rel=stylesheet href="styles-en.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+</head>
+
+<body>
+	<div class="page">
+		<ul class="menu">
+			<li class="col"><a href="projets-en.html" class="">Projects</a></li>
+			<li class="col"><a href="bio-en.html" class="">Bio</a></li>
+			<li  class="col contact flex">
+				<span><a href="contact-en.html">Contact</a></span>
+				<span>
+					<a href="index.html">fr</a>/<a href="index-en.html">en</a>
+				</span>
+			</li>
+		</ul>
+			<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="img/1.jpg" style="width:100%">
+  <img class="mySlides" src="img/6.jpg" style="width:100%">
+  <img class="mySlides" src="img/18.jpg" style="width:100%">
+   <img class="mySlides" src="img/21.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+		<div class="nom"><a href="index-en.html">Nelly Courtois — 2021</a></div>
+	</div>
+</body>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js" />
+	<script type="text/javascript" src="js/scripts.js" />
+</html>
